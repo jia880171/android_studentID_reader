@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unick.studentid_checker.fragments.CreateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增活動" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView_school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="校名" />
+            <EditText
+                android:id="@+id/editView_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入校名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView_color_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顏色_1" />
+            <EditText
+                android:id="@+id/editView_color_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入顏色" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView_amount_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="數量_1" />
+            <EditText
+                android:id="@+id/editView_amount_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入數量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView_color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顏色_2" />
+            <EditText
+                android:id="@+id/editView_color_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入顏色" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView_amount_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="數量_2" />
+            <EditText
+                android:id="@+id/editView_amount_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入數量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顏色_3" />
+            <EditText
+                android:id="@+id/editView_color_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入顏色" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView_amount_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="數量_3" />
+            <EditText
+                android:id="@+id/editView_amount_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="請輸入數量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="確定" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

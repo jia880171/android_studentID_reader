@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1086960748576",
+    "firebase_url": "https://studentidchecker.firebaseio.com",
+    "project_id": "studentidchecker",
+    "storage_bucket": "studentidchecker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086960748576:android:5238faa250da2ebe",
+        "android_client_info": {
+          "package_name": "com.unick.studentid_checker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086960748576-4n6aqk8916gkog5nvhieob095j40bhk6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unick.studentid_checker",
+            "certificate_hash": "beee7c1605d159c340cf55b5edb5f7c3d953b2be"
+          }
+        },
+        {
+          "client_id": "1086960748576-nisapfq2gsd2mrsb6m4feb1c1gla4l2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwDL9kqzYP9FfN9RFuhndb2JlkGqmXg1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086960748576-nisapfq2gsd2mrsb6m4feb1c1gla4l2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
