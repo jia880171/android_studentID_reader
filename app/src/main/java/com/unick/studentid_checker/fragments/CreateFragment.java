@@ -227,7 +227,7 @@ public class CreateFragment extends Fragment {
 
         //String key = mDatabase.child("Events/" + sdf.format(new Date()) + "/").push().getKey();
         //Log.d("createFragment","key:"+key);
-        Event event = new Event(UID, schoolname, color_1, amount_1, color_2, amount_2, color_3, amount_3);
+        Event event = new Event(UID, schoolname, color_1, amount_1, amount_1, color_2, amount_2, amount_2, color_3, amount_3, amount_3);
         mDatabase.child("Events").child(sdf.format(new Date()).toString()).child(schoolname.toString()).setValue(event);
 
         Fragment ListFragment;

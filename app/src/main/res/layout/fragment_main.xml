@@ -5,9 +5,38 @@
     tools:context="com.unick.studentid_checker.fragments.MainFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="說明頁面" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用說明" />
+        <TextView
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本APP可幫助確認庫存與確認該學生証是否已在該場次購買過產品" />
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.利用左側選單『新增校園活動』 輸入欲販售之巧立杯之顏色與數量" />
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.利用左側選單『選擇活動』 選擇創建好的活動" />
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.將學生證與磁扣輕觸手機背面 即可確認該學生是否重複購買" />
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

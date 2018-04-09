@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="請輸入顏色" />
+                android:hint="請輸入顏色（若無請填 無 ）" />
 
         </LinearLayout>
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="請輸入數量" />
+                android:hint="請輸入數量（若無請填 ０ ）" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="請輸入顏色" />
+                android:hint="請輸入顏色（若無請填 無 ）" />
 
         </LinearLayout>
 
@@ -141,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="請輸入數量" />
+                android:hint="請輸入數量（若無請填 ０ ）" />
         </LinearLayout>
 
         <LinearLayout
