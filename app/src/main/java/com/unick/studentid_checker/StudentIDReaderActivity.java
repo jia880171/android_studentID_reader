@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.nfc.NfcAdapter;
+import android.nfc.NfcManager;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -67,7 +68,6 @@ public class StudentIDReaderActivity extends AppCompatActivity {
     TextView stock_amount_2;
     TextView stock_name_3;
     TextView stock_amount_3;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,12 +135,26 @@ public class StudentIDReaderActivity extends AppCompatActivity {
             }
         });
 
-        //初始化NfcAdapter
-        mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
-        //初始化PendingIntent
-        // 初始化PendingIntent，当有NFC设备连接上的时候，就交给当前Activity处理
-        pi = PendingIntent.getActivity(this, 0, new Intent(this, getClass())
-                .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+        NfcManager manager = (NfcManager) this.getApplicationContext().getSystemService(Context.NFC_SERVICE);
+        NfcAdapter adapter = manager.getDefaultAdapter();
+        if (adapter != null && adapter.isEnabled()) {
+            //Yes NFC available
+
+            //初始化NfcAdapter
+            mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
+            //初始化PendingIntent
+            // 初始化PendingIntent，当有NFC设备连接上的时候，就交给当前Activity处理
+            pi = PendingIntent.getActivity(this, 0, new Intent(this, getClass())
+                    .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+        }else{
+            new AlertDialog.Builder(StudentIDReaderActivity.this)
+                    .setTitle("手機不支援NFC！")
+                    .setPositiveButton("確認", null)
+                    .show();
+            return;
+            //Your device doesn't support NFC
+        }
+
     }
 
     @Override
@@ -155,7 +169,20 @@ public class StudentIDReaderActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        mNfcAdapter.enableForegroundDispatch(this, pi, null, null);
+        NfcManager manager = (NfcManager) this.getApplicationContext().getSystemService(Context.NFC_SERVICE);
+        NfcAdapter adapter = manager.getDefaultAdapter();
+        if (adapter != null && adapter.isEnabled()) {
+            //Yes NFC available
+            mNfcAdapter.enableForegroundDispatch(this, pi, null, null);
+        }else{
+            new AlertDialog.Builder(StudentIDReaderActivity.this)
+                    .setTitle("手機不支援NFC！")
+                    .setPositiveButton("確認", null)
+                    .show();
+            return;
+            //Your device doesn't support NFC
+        }
+
     }
 
     /**
